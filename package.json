@@ -1,35 +1,64 @@
 {
-  "name": "robofriends",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "tachyons": "^4.12.0"
+  "_from": "lodash",
+  "_id": "lodash@4.17.19",
+  "_inBundle": false,
+  "_integrity": "sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==",
+  "_location": "/lodash",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "lodash",
+    "name": "lodash",
+    "escapedName": "lodash",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.19.tgz",
+  "_shasum": "e48ddedbe30b3321783c5b4301fbd353bc1e4a4b",
+  "_spec": "lodash",
+  "_where": "/home/humzah/Programming/Background Generator",
+  "author": {
+    "name": "John-David Dalton",
+    "email": "john.david.dalton@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lodash/lodash/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "John-David Dalton",
+      "email": "john.david.dalton@gmail.com"
+    },
+    {
+      "name": "Mathias Bynens",
+      "email": "mathias@qiwi.be"
+    }
+  ],
+  "deprecated": false,
+  "description": "Lodash modular utilities.",
+  "homepage": "https://lodash.com/",
+  "icon": "https://lodash.com/icon.svg",
+  "keywords": [
+    "modules",
+    "stdlib",
+    "util"
+  ],
+  "license": "MIT",
+  "main": "lodash.js",
+  "name": "lodash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lodash/lodash.git"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "version": "4.17.19"
 }
