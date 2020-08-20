@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cardlist from '../components/Cardlist';
 import SearchBox from '../components/SearchBox';
+import ErrorBoundry from '../components/Error Boundary';
 import './App.css';
 import Scroll from '../components/Scroll'
 
@@ -18,6 +19,7 @@ class App extends Component{
     }
 
     componentDidMount(){
+        console.log(this.props.store);
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(users => this.setState({robots:users}))
@@ -35,7 +37,9 @@ class App extends Component{
                 <h1 className = 'f2'>Robofriends</h1>
                 <SearchBox sChange={this.onSearchChange}/>
                 <Scroll>
-                    <Cardlist robots={ filterRobots }/>
+                    <ErrorBoundry>
+                        <Cardlist robots={ filterRobots }/>
+                    </ErrorBoundry>
                 </Scroll>   
             </div>
         )
