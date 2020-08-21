@@ -8,11 +8,13 @@ import * as serviceWorker from './serviceWorker';
 import {searchRobots} from './reducers';
 import 'tachyons';
 
-const store = createStore(rootReducer)
+const store = createStore(searchRobots)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App store={store}/>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
